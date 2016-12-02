@@ -838,3 +838,18 @@ object {
 .site-content .widget-area {
   flex: 1;
 }
+
+.site-branding {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.site-title {
+  display: flex;
+  justify-content: center;
+}
+
+.site-description {
+  align-self: center;
+}

@@ -6,11 +6,10 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package flexysass
+ * @package Sassyflex
  */
 
 ?>
-
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">

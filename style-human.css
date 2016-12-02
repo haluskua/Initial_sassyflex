@@ -841,3 +841,24 @@ object {
   -ms-flex: 1;
       flex: 1;
 }
+
+.site-branding {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.site-title {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.site-description {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
