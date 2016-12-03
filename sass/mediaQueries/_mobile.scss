@@ -1,0 +1,25 @@
+@media (max-width: 420px) {
+
+	.site-branding {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background-color: #dbe3e4;
+		padding-top: 5%;
+		flex: 1;
+		}
+		.site-title a {
+			display: flex;
+			justify-content: center;
+			font-size: 0.79em;
+			color: #000000;
+			text-decoration: none;
+			padding-bottom: 5%;
+			}
+			.site-description {
+				align-self: center;
+			}
+}
+#section1, #section3 {
+	flex: 0;
+}

@@ -38,7 +38,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Posts and pages
 	## Comments
 # Infinite scroll
-# Media
+# Layout
+# Media Queries
+
+
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
@@ -105,6 +108,15 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 --------------------------------------------------------------*/
 @import "media/media";
 
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
 @import "layout/page";
 
 @import "layout/header";
+/*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
+@import "mediaQueries/desktop.scss";
+@import "mediaQueries/ipad";
+@import "mediaQueries/mobile";
