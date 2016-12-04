@@ -1,26 +1,36 @@
-
+#masthead .site-header {
+	background-color: red;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
 
 // spliting the header into 3 section layout
 #header-3section {
 	display: flex;
-	justify-content: space-between;
-	width: 100vw;
-	height: auto;
+	justify-content: space-around;
+	width: 100%;
+	height: 280px;
 	margin: 0 auto;
+	background-color: green;
 	}
 	// section 1
 	#section1 {
 		display: flex;
 		justify-content: center;
 		border: 1px solid red;
-		flex: 1
+		width: 33.33%;
+		height: auto;
 		}
 	// section 2
 	.site-branding {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		flex: 2
+		width: 33.33%;
+
 		}
 
 		.site-title {
@@ -31,34 +41,33 @@
 				align-self: center;
 				}
 
-	// section 3
-	#section3 {
-		display: flex;
-		justify-content: center;
-		background-color: purple;
-		flex: 1;
-		}
-		
-		.social-medias {
+	// section #
+		#section3 {
 			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			width: 100%;
-			height: auto;
-			list-style: none;
-			margin: 0 auto;
+			flex-direction: column;
+			justify-content: flex-start;
+			width: 33.33%;
+			background-color: purple;
+			flex: 1;
 			}
-			.social-medias li {
-				align-self: center;
-				width: 33.33%;
+			
+			.social-medias {
+				display: flex;
+				justify-content: space-between;
+				width: 100%;
 				height: auto;
-				border: 1px solid yellow;
-			}
+				list-style: none;
+				margin: 0 auto;
+				}
+				.social-medias li {
+					width: 100%;
+					height: auto;
+					border: 1px solid yellow;
+				}
 
-
-			.social-medias a {
-				text-decoration: none;
-				width: 33.33%;
-			}
+				.social-medias a {
+					text-decoration: none;
+					width: 33.33%;
+				}
 
 
