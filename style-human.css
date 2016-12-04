@@ -849,7 +849,6 @@ object {
 }
 
 #masthead .site-header {
-  background-color: red;
   width: 100%;
   height: auto;
   display: -ms-flexbox;
@@ -868,6 +867,7 @@ object {
   width: 100%;
   height: 270px;
   margin: 0 auto;
+  background-color: red;
 }
 
 #section1 {

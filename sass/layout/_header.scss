@@ -1,5 +1,4 @@
 #masthead .site-header {
-	background-color: red;
 	width: 100%;
 	height: auto;
 	display: flex;
@@ -14,6 +13,7 @@
 	width: 100%;
 	height: 270px;
 	margin: 0 auto;
+	background-color: red;
 	}
 	// section 1
 	#section1 {
@@ -28,7 +28,6 @@
 		flex-direction: column;
 		justify-content: center;
 		width: 33.33%;
-
 		}
 
 		.site-title {
