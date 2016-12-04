@@ -26,7 +26,7 @@
 	<header id="masthead" class="site-header" role="banner">
 
 		<div id="header-3section">
-			<div id="secion1">
+			<div id="section1">
 				<p>empty for now</p>
 			</div>
 			<div class="site-branding">

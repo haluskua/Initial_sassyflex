@@ -866,9 +866,8 @@ object {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100%;
-  height: 280px;
+  height: 270px;
   margin: 0 auto;
-  background-color: green;
 }
 
 #section1 {
@@ -876,7 +875,6 @@ object {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  border: 1px solid red;
   width: 33.33%;
   height: auto;
 }
@@ -911,9 +909,7 @@ object {
   -ms-flex-pack: start;
       justify-content: flex-start;
   width: 33.33%;
-  background-color: purple;
-  -ms-flex: 1;
-      flex: 1;
+  height: auto;
 }
 
 .social-medias {
@@ -921,21 +917,20 @@ object {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  width: 100%;
-  height: auto;
   list-style: none;
+  width: 65%;
   margin: 0 auto;
+  box-sizing: initial;
 }
 
 .social-medias li {
   width: 100%;
   height: auto;
-  border: 1px solid yellow;
 }
 
 .social-medias a {
   text-decoration: none;
-  width: 33.33%;
+  color: gray;
 }
 
 /*--------------------------------------------------------------
@@ -970,8 +965,4 @@ object {
     -ms-flex-item-align: center;
         align-self: center;
   }
-}
-#section1, #section3 {
-  -ms-flex: 0;
-      flex: 0;
 }

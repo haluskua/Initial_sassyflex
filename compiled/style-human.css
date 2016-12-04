@@ -858,15 +858,13 @@ object {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  height: 280px;
+  height: 270px;
   margin: 0 auto;
-  background-color: green;
 }
 
 #section1 {
   display: flex;
   justify-content: center;
-  border: 1px solid red;
   width: 33.33%;
   height: auto;
 }
@@ -892,28 +890,26 @@ object {
   flex-direction: column;
   justify-content: flex-start;
   width: 33.33%;
-  background-color: purple;
-  flex: 1;
+  height: auto;
 }
 
 .social-medias {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  height: auto;
   list-style: none;
+  width: 65%;
   margin: 0 auto;
+  box-sizing: initial;
 }
 
 .social-medias li {
   width: 100%;
   height: auto;
-  border: 1px solid yellow;
 }
 
 .social-medias a {
   text-decoration: none;
-  width: 33.33%;
+  color: gray;
 }
 
 /*--------------------------------------------------------------
@@ -941,7 +937,4 @@ object {
   .site-description {
     align-self: center;
   }
-}
-#section1, #section3 {
-  flex: 0;
 }
