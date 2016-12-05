@@ -950,12 +950,13 @@ object {
     width: 100vw;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 
   #sectin1 {
     width: 33.33%;
+    border: 1px solid pink;
   }
 
   .site-branding {
@@ -968,13 +969,12 @@ object {
     background-color: #dbe3e4;
     padding-top: 5%;
     width: 33.33%;
+    border: 1px solid green;
   }
 
   .site-title a {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
     font-size: 0.79em;
     color: #000000;
     text-decoration: none;
@@ -984,5 +984,27 @@ object {
   .site-description {
     -ms-flex-item-align: center;
         align-self: center;
+  }
+
+  #section3 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    width: 100%;
+    border: 1px solid black;
+  }
+
+  .social-medias {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    background-color: green;
+  }
+
+  .social-medias a {
+    font-size: 0.6em;
+    width: auto;
+    color: white;
+    border: 1px solid yellow;
   }
 }

@@ -926,11 +926,12 @@ object {
   #header-3section {
     width: 100vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   #sectin1 {
     width: 33.33%;
+    border: 1px solid pink;
   }
 
   .site-branding {
@@ -940,11 +941,11 @@ object {
     background-color: #dbe3e4;
     padding-top: 5%;
     width: 33.33%;
+    border: 1px solid green;
   }
 
   .site-title a {
     display: flex;
-    justify-content: center;
     font-size: 0.79em;
     color: #000000;
     text-decoration: none;
@@ -953,5 +954,24 @@ object {
 
   .site-description {
     align-self: center;
+  }
+
+  #section3 {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    border: 1px solid black;
+  }
+
+  .social-medias {
+    align-self: flex-start;
+    background-color: green;
+  }
+
+  .social-medias a {
+    font-size: 0.6em;
+    width: auto;
+    color: white;
+    border: 1px solid yellow;
   }
 }
