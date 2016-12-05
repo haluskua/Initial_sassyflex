@@ -13,7 +13,6 @@
 	width: 100%;
 	height: 270px;
 	margin: 0 auto;
-	background-color: red;
 	}
 	// section 1
 	#section1 {
@@ -32,10 +31,14 @@
 
 		.site-title {
 			display: flex;
-			justify-content: center;}
+			justify-content: center;
+			}
 
 			.site-description {
 				align-self: center;
+				}
+				.site-titel a {
+					text-decoration: none;
 				}
 
 	// section #
@@ -52,12 +55,16 @@
 				justify-content: space-between;
 				list-style: none;
 				width: 65%;
+				padding-top: 3%;
 				margin: 0 auto;
 				box-sizing: initial;
 				}
 				.social-medias li {
 					width: 100%;
 					height: auto;
+					align-text: center;
+					display: flex;
+					justify-content: center;
 				}
 
 				.social-medias a {
