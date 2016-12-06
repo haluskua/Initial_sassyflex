@@ -858,7 +858,6 @@ object {
       flex-direction: column;
   -ms-flex-pack: center;
       justify-content: center;
-  background-color: red;
 }
 
 #header-3section {
@@ -949,7 +948,7 @@ object {
 --------------------------------------------------------------*/
 @media (max-width: 420px) {
   #header-3section {
-    width: 100vw;
+    width: 100%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
@@ -966,8 +965,8 @@ object {
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
-    -ms-flex-pack: center;
-        justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     background-color: #dbe3e4;
     padding-top: 5%;
     width: 33.33%;
@@ -980,7 +979,6 @@ object {
     -ms-flex-pack: center;
         justify-content: center;
     font-size: 0.49em;
-
     color: #000000;
     text-decoration: none;
     padding-bottom: 5%;

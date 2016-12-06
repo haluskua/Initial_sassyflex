@@ -1,6 +1,6 @@
 @media (max-width: 420px) {
 	#header-3section {
-		width: 100vw;
+		width: 100%;
 		display: flex;
 		justify-content: space-around;
 
@@ -12,7 +12,7 @@
 		.site-branding {
 			display: flex;
 			flex-direction: column;
-			justify-content: center;
+			justify-content: space-around;
 			background-color: #dbe3e4;
 			padding-top: 5%;
 			width: 33.33%;
