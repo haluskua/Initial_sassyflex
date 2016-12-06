@@ -843,6 +843,7 @@ object {
 
 .site-content .widget-area {
   flex: 1;
+  background-color: green;
 }
 
 #masthead .site-header {
@@ -851,6 +852,7 @@ object {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: red;
 }
 
 #header-3section {

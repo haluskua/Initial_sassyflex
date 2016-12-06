@@ -846,6 +846,7 @@ object {
 .site-content .widget-area {
   -ms-flex: 1;
       flex: 1;
+  background-color: green;
 }
 
 #masthead .site-header {
@@ -857,6 +858,7 @@ object {
       flex-direction: column;
   -ms-flex-pack: center;
       justify-content: center;
+  background-color: red;
 }
 
 #header-3section {
