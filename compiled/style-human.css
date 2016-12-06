@@ -929,7 +929,7 @@ object {
     justify-content: space-between;
   }
 
-  #sectin1 {
+  #section1 {
     width: 33.33%;
   }
 
@@ -945,7 +945,7 @@ object {
   .site-title a {
     display: flex;
     justify-content: center;
-    font-size: 0.79em;
+    font-size: 0.49em;
     color: #000000;
     text-decoration: none;
     padding-bottom: 5%;
