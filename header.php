@@ -27,7 +27,6 @@
 
 		<div id="header-3section">
 			<div id="section1">
-				<p>empty for now</p>
 			</div>
 			<div class="site-branding">
 				<?php
@@ -45,6 +44,7 @@
 						endif; ?>
 			</div>
 
+
 			<div id="section3">
 				<ul class="social-medias">
 					<li><a href="#">facebook</a></li>
@@ -54,10 +54,13 @@
 			</div>
 		
 		</div><!-- .site-branding -->
-
+					
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'flexsass' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+
+			<hr> <br>
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'flexsass' ); ?></button>
+				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+			<hr> <br>
 		</nav><!-- #site-navigation -->
 			
 	</header><!-- #masthead -->

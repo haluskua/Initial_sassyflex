@@ -846,6 +846,7 @@ object {
 .site-content .widget-area {
   -ms-flex: 1;
       flex: 1;
+  background-color: green;
 }
 
 #masthead .site-header {
@@ -857,6 +858,7 @@ object {
       flex-direction: column;
   -ms-flex-pack: center;
       justify-content: center;
+  background-color: red;
 }
 
 #header-3section {
@@ -954,7 +956,7 @@ object {
         justify-content: space-around;
   }
 
-  #sectin1 {
+  #section1 {
     width: 33.33%;
     border: 1px solid pink;
   }
@@ -975,7 +977,10 @@ object {
   .site-title a {
     display: -ms-flexbox;
     display: flex;
-    font-size: 0.79em;
+    -ms-flex-pack: center;
+        justify-content: center;
+    font-size: 0.49em;
+
     color: #000000;
     text-decoration: none;
     padding-bottom: 5%;
