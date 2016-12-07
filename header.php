@@ -24,9 +24,34 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'flexsass' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
+		
+		<div class="outerclass">
+			<div id="searchbar">
+				<div id="searchspace">
+					<input type="search" class="search-field" placeholder="Search …" value="" name="s">
+				</div>
+				<div id="carticons">
+					<div>
+						<img src="http://placehold.it/30x30" alt="shopping cart">
+					</div>
+					<div>
+						<img src="http://placehold.it/30x30" alt="payment">	
+					</div>
+				</div>
+			</div>
+		</div>
 
+	<div class="rowclass">
 		<div id="header-3section">
 			<div id="section1">
+				<div id="smicons">
+					<div>
+						<img src="http://placehold.it/30x30" alt="shopping cart">
+					</div>
+					<div>
+						<img src="http://placehold.it/30x30" alt="payment">	
+					</div>
+				</div>
 			</div>
 			<div class="site-branding">
 				<?php
@@ -42,20 +67,19 @@
 							<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
 						<?php
 						endif; ?>
-
 			</div>
-
 
 			<div id="section3">
-				<ul class="social-medias">
-					<li><a href="#">facebook</a></li>
-					<li><a href="#">twitter</a></li>
-					<li><a href="#">pinterest</a></li>
-				</ul>
+				Michelle Mconnel
+			</div>
+
+			<div id="section4">
+				MENU
 			</div>
 		
+		
 		</div><!-- .site-branding -->
-					
+	</div>		
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 
 			<hr> <br>

@@ -835,15 +835,15 @@ object {
 --------------------------------------------------------------*/
 .site-content {
   display: flex;
+  width: 100%;
 }
 
 .content-area {
-  flex: 2;
+  width: 66.66%;
 }
 
 .site-content .widget-area {
-  flex: 1;
-  background-color: green;
+  width: 33.3%;
 }
 
 #masthead .site-header {
@@ -852,7 +852,6 @@ object {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: red;
 }
 
 #header-3section {
@@ -925,23 +924,81 @@ object {
 # Media Queries
 --------------------------------------------------------------*/
 @media (max-width: 420px) {
-  #header-3section {
-    width: 100vw;
+  #masthead {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .outerclass {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  #searchbar {
+    width: 100%;
+    height: auto;
+    background-color: #f7f8f8;
+    height: 46px;
     display: flex;
     justify-content: space-between;
+  }
+
+  #searchspace {
+    margin: 0.3em 0.3em;
+  }
+
+  #carticons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #carticons div {
+    margin: 0.3em 0.3em;
+  }
+
+  .rowclass {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid red;
+  }
+
+  #header-3section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f7f8f8;
+    border: 1px solid green;
   }
 
   #section1 {
     width: 33.33%;
   }
 
+  #smicons {
+    display: flex;
+    justify-content: space-around;
+    margin: 0.2em 0.6em;
+  }
+
+  #smicons div {
+    margin: 0 0.2em;
+  }
+
   .site-branding {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #dbe3e4;
-    padding-top: 5%;
-    width: 33.33%;
+    border: 1px solid yellow;
+    width: 100%;
   }
 
   .site-title a {
@@ -956,4 +1013,23 @@ object {
   .site-description {
     align-self: center;
   }
+}
+.site-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  border: 1px solid green;
+}
+
+.content-area {
+  width: 40%;
+}
+
+.site-content .widget-area {
+  width: 33.3%;
+  border: 1px solid red;
+}
+
+.page-title {
+  width: 20%;
 }

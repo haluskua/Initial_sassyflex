@@ -19,7 +19,7 @@ get_header(); ?>
 
 		<div>
 			<img src="http://placehold.it/800x400" alt="">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, voluptatibus magni natus ad quibusdam obcaecati, deserunt incidunt voluptatum odio sit ipsum explicabo, sequi dolorem aliquid veniam error reprehenderit placeat odit?</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipising elit. Numquam, voluptatibus magni natus ad quibusdam obcaecati, deserunt incidunt voluptatum odio sit ipsum explicabo, sequi dolorem aliquid veniam error reprehenderit placeat odit?</p>
 		</div>
 		<div>
 			<img src="http://placehold.it/300x300" alt="">
