@@ -32,62 +32,67 @@
 				</div>
 				<div id="carticons">
 					<div>
-						<img src="http://placehold.it/30x30" alt="shopping cart">
+						<img src="http://placehold.it/30x30" alt="">
 					</div>
 					<div>
-						<img src="http://placehold.it/30x30" alt="payment">	
+						<img src="http://placehold.it/30x30" alt="">	
 					</div>
 				</div>
 			</div>
 		</div>
 
-	<div class="rowclass">
-		<div id="header-3section">
-			<div id="section1">
-				<div id="smicons">
-					<div>
-						<img src="http://placehold.it/30x30" alt="shopping cart">
-					</div>
-					<div>
-						<img src="http://placehold.it/30x30" alt="payment">	
+		<div class="rowclass">
+			<div id="header-3section">
+				<div id="section1">
+					<div id="smicons">
+						<div>
+							<img src="http://placehold.it/30x30" alt="">
+						</div>
+						<div>
+							<img src="http://placehold.it/30x30" alt="">	
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="site-branding">
-				<?php
-				if ( is_front_page() && is_home() ) : ?>
-							<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-						<?php else : ?>
-							<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+				<div class="site-branding">
+					<div id="sbcontainer">			
 						<?php
-						endif;
+						if ( is_front_page() && is_home() ) : ?>
 
-						$description = get_bloginfo( 'description', 'display' );
-						if ( $description || is_customize_preview() ) : ?>
-							<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-						<?php
-						endif; ?>
-			</div>
+						<div id="whlf"><h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+						</div>
 
-			<div id="section3">
-				Michelle Mconnel
-			</div>
+						<div id="mitch"><small>Mitchell Mconnel</small>
+						</div>
 
-			<div id="section4">
-				MENU
+						<div id="bianka">
+							<?php else : ?>
+								<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+							<?php
+							endif;
+
+							$description = get_bloginfo( 'description', 'display' );
+							if ( $description || is_customize_preview() ) : ?>
+								<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
+							<?php
+							endif; ?>
+						</div>
+					</div>
+
+
+					<div id="nav-container">
+						<nav id="site-navigation" class="main-navigation" role="navigation">
+
+							<hr>
+								<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'flexsass' ); ?></button>
+								<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+							<hr> 
+						</nav><!-- #site-navigation -->
+				
+					</div>
+				</div><!-- .site-branding -->	
 			</div>
+		</div>		
 		
-		
-		</div><!-- .site-branding -->
-	</div>		
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-
-			<hr> <br>
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'flexsass' ); ?></button>
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-			<hr> <br>
-		</nav><!-- #site-navigation -->
-			
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

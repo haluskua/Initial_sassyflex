@@ -46,7 +46,7 @@
 	width: 100%;
 	height: auto;
 	margin: 0 auto;
-	border: 1px solid red;
+	border: 1px solid green;
 }
 #header-3section {
 	width: 100%;
@@ -54,7 +54,7 @@
 	flex-direction: column;
 	align-items: center;
 	background-color: #f7f8f8;
-	border: 1px solid green;
+	border: 1px solid purple;
 
 	}
 	#section1 {
@@ -71,17 +71,39 @@
 	.site-branding {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: flex-start;
 		border: 1px solid yellow;
 		width: 100%;
+		}
+
+		#sbcontainer {
+			display: flex;
+			flex-direction: column;
+			align-items: space-around;
+		}
+		.sbcontainer div {
+			border: yellow;
+
+		}
+		#whlf {
+			display: flex;
+			align-self: center;
+		}
+		#mitch {
+			display: flex;
+			align-self: center;
+			margin: 0.1em 0.1em;
+		}
+		#bianka {
+			display: flex;
+			align-self: center;
 		}
 		.site-title a {
 			display: flex;
 			justify-content: center;
-			font-size: 0.49em;
+			font-size: 0.8em;
 			color: #000000;
 			text-decoration: none;
-			padding-bottom: 5%;
 			}
 			.site-description {
 				align-self: center;
@@ -97,19 +119,27 @@
 .site-content {
 	display: flex;
 	width: 100%;
-	justify-content: space-around;
+	justify-content: flex-start;
 	border: 1px solid green;
 }
 
 .content-area {
 	width: 40%;
+	border: 1px solid red;
 
 }
 
 .site-content .widget-area {
-	width: 33.3%;
+	width: 20.3%;
 	border: 1px solid red;
 }
 	.page-title {
 		width: 20%;
 	}
+#nav-container {
+	display: flex; 
+	justify-content: center;
+	width: 100%;
+	border: 1px solid green;
+	height: 90px;
+}
