@@ -833,19 +833,6 @@ object {
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
-.site-content {
-  display: flex;
-}
-
-.content-area {
-  flex: 2;
-}
-
-.site-content .widget-area {
-  flex: 1;
-  background-color: green;
-}
-
 #masthead .site-header {
   width: 100%;
   height: auto;
@@ -935,14 +922,75 @@ object {
     border: 1px solid pink;
   }
 
+  .outerclass {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  #searchbar {
+    width: 100%;
+    height: auto;
+    background-color: #f7f8f8;
+    height: 46px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #searchspace {
+    margin: 0.3em 0.3em;
+  }
+
+  #carticons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #carticons div {
+    margin: 0.3em 0.3em;
+  }
+
+  .rowclass {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid red;
+  }
+
+  #header-3section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f7f8f8;
+    border: 1px solid green;
+  }
+
+  #section1 {
+    width: 33.33%;
+  }
+
+  #smicons {
+    display: flex;
+    justify-content: space-around;
+    margin: 0.2em 0.6em;
+  }
+
+  #smicons div {
+    margin: 0 0.2em;
+  }
+
   .site-branding {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    background-color: #dbe3e4;
-    padding-top: 5%;
-    width: 33.33%;
-    border: 1px solid green;
+    justify-content: center;
+    border: 1px solid yellow;
+    width: 100%;
   }
 
   .site-title a {
@@ -957,23 +1005,23 @@ object {
   .site-description {
     align-self: center;
   }
+}
+.site-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  border: 1px solid green;
+}
 
-  #section3 {
-    display: flex;
-    justify-content: flex-start;
-    width: 100%;
-    border: 1px solid black;
-  }
+.content-area {
+  width: 40%;
+}
 
-  .social-medias {
-    align-self: flex-start;
-    background-color: green;
-  }
+.site-content .widget-area {
+  width: 33.3%;
+  border: 1px solid red;
+}
 
-  .social-medias a {
-    font-size: 0.6em;
-    width: auto;
-    color: white;
-    border: 1px solid yellow;
-  }
+.page-title {
+  width: 20%;
 }
