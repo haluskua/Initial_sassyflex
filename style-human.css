@@ -355,7 +355,6 @@ hr {
   background-color: #ccc;
   border: 0;
   height: 1px;
-  margin-bottom: 1.5em;
 }
 
 ul, ol {
@@ -404,6 +403,13 @@ table {
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border-color: transparent;
+  background: transparent;
+}
 button:active, button:focus,
 input[type="button"]:active,
 input[type="button"]:focus,
@@ -412,7 +418,6 @@ input[type="reset"]:focus,
 input[type="submit"]:active,
 input[type="submit"]:focus {
   border-color: #aaa #bbb #bbb;
-  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 
 input[type="text"],
@@ -676,7 +681,7 @@ a:hover, a:active {
 }
 
 .hentry {
-  margin: 0 0 1.5em;
+  margin: 0 0 1em;
 }
 
 .byline,
@@ -692,12 +697,12 @@ a:hover, a:active {
 .page-content,
 .entry-content,
 .entry-summary {
-  margin: 1.5em 0 0;
+  margin: 1em 0 0;
 }
 
 .page-links {
   clear: both;
-  margin: 0 0 1.5em;
+  margin: 0 0 1em;
 }
 
 /*--------------------------------------------------------------
@@ -817,7 +822,7 @@ object {
 }
 
 .content-area {
-  width: 66.66%;
+  width: 100%;
 }
 
 .site-content .widget-area {
@@ -828,6 +833,14 @@ object {
 # Media Queries
 --------------------------------------------------------------*/
 @media (max-width: 420px) {
+  .site-header {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #f7f8f8;
+  }
+
   .outerclass {
     display: -ms-flexbox;
     display: flex;
@@ -844,7 +857,7 @@ object {
   #searchbar {
     width: 100%;
     height: auto;
-    background-color: #f7f8f8;
+    background-color: #ddd;
     height: auto;
     display: -ms-flexbox;
     display: flex;
@@ -853,10 +866,17 @@ object {
   }
 
   #searchspace {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
     margin: 0.1em 0.1em;
   }
 
   #carticons {
+    width: 18%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
@@ -864,7 +884,18 @@ object {
   }
 
   #carticons div {
-    margin: 0.3em 0.3em;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin: 0.6em 0.3em;
+  }
+
+  .rowstart {
+    width: 100%;
+    height: auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
   }
 
   .rowcenterdiv {
@@ -898,8 +929,8 @@ object {
   }
 
   .space-around {
-    width: 17%;
-    margin: 0.2em 0 auto;
+    width: 14%;
+    margin: 0.8em 0.4em auto;
     height: auto;
     display: -ms-flexbox;
     display: flex;
@@ -934,5 +965,48 @@ object {
     display: -ms-flexbox;
     display: flex;
     font-size: 0.7em;
+  }
+
+  #nav-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row;
+        flex-flow: row;
+    -ms-flex-pack: center;
+        justify-content: center;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .centerself {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+
+  #banner {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+
+  #img-box {
+    width: 50%;
+    height: 170px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
   }
 }

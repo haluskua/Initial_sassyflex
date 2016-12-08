@@ -41,7 +41,7 @@
 			</div>
 		</div>
 
-		<div class="rowcenterdiv">
+		<div class="rowstart">
 			<div class="space-around">
 				<div id="fbi">
 					<img src="http://placehold.it/30x30" alt="">
@@ -72,9 +72,10 @@
 
 
 			<div id="nav-container">
-				<hr>
+				
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<div class="centerone"><button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'flexsass' ); ?></button>
+					<hr>
+					<div class="centerself"><button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'flexsass' ); ?></button>
 					</div>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					<hr> 
