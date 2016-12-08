@@ -58,7 +58,7 @@ function flexsass_header_style() {
 	?>
 		.site-title,
 		.site-description {
-			position: absolute;
+			position: relative;
 			clip: rect(1px, 1px, 1px, 1px);
 		}
 	<?php

@@ -404,29 +404,6 @@ table {
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 12px;
-  font-size: 0.75rem;
-  line-height: 1;
-  padding: .6em 1em .4em;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
-}
-button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover {
-  border-color: #ccc #bbb #aaa;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
-}
 button:active, button:focus,
 input[type="button"]:active,
 input[type="button"]:focus,
@@ -833,95 +810,23 @@ object {
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
-#masthead .site-header {
+.site-content {
+  display: flex;
   width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
-#header-3section {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  height: 270px;
-  margin: 0 auto;
+.content-area {
+  width: 66.66%;
 }
 
-#section1 {
-  display: flex;
-  justify-content: center;
+.site-content .widget-area {
   width: 33.33%;
-  height: auto;
-}
-
-.site-branding {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 33.33%;
-}
-
-.site-title {
-  display: flex;
-  justify-content: center;
-}
-
-.site-description {
-  align-self: center;
-}
-
-.site-titel a {
-  text-decoration: none;
-}
-
-#section3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 33.33%;
-  height: auto;
-}
-
-.social-medias {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  width: 65%;
-  padding-top: 3%;
-  margin: 0 auto;
-  box-sizing: initial;
-}
-
-.social-medias li {
-  width: 100%;
-  height: auto;
-  align-text: center;
-  display: flex;
-  justify-content: center;
-}
-
-.social-medias a {
-  text-decoration: none;
-  color: gray;
 }
 
 /*--------------------------------------------------------------
 # Media Queries
 --------------------------------------------------------------*/
 @media (max-width: 420px) {
-  #header-3section {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-  }
-
-  #section1 {
-    width: 33.33%;
-    border: 1px solid pink;
-  }
-
   .outerclass {
     display: flex;
     flex-direction: column;
@@ -929,19 +834,20 @@ object {
     width: 100%;
     height: auto;
     margin: 0 auto;
+    background-color: #f3f9f8;
   }
 
   #searchbar {
     width: 100%;
     height: auto;
     background-color: #f7f8f8;
-    height: 46px;
+    height: auto;
     display: flex;
     justify-content: space-between;
   }
 
   #searchspace {
-    margin: 0.3em 0.3em;
+    margin: 0.1em 0.1em;
   }
 
   #carticons {
@@ -953,109 +859,59 @@ object {
     margin: 0.3em 0.3em;
   }
 
-  .rowclass {
+  .rowcenterdiv {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    border: green;
+  }
+
+  #headerheight {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .column-between {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid yellow;
+  }
+
+  .space-around {
+    width: 17%;
+    margin: 0.2em 0 auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .site-title {
     display: flex;
     justify-content: center;
     width: 100%;
     height: auto;
-    margin: 0 auto;
-    border: 1px solid green;
-  }
-
-  #header-3section {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #f7f8f8;
-    border: 1px solid purple;
-  }
-
-  #section1 {
-    width: 33.33%;
-  }
-
-  #smicons {
-    display: flex;
-    justify-content: space-around;
-    margin: 0.2em 0.6em;
-  }
-
-  #smicons div {
-    margin: 0 0.2em;
-  }
-
-  .site-branding {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    border: 1px solid yellow;
-    width: 100%;
-  }
-
-  #sbcontainer {
-    display: flex;
-    flex-direction: column;
-    align-items: space-around;
-  }
-
-  .sbcontainer div {
-    border: yellow;
-  }
-
-  #whlf {
-    display: flex;
-    align-self: center;
-  }
-
-  #mitch {
-    display: flex;
-    align-self: center;
-    margin: 0.1em 0.1em;
-  }
-
-  #bianka {
-    display: flex;
-    align-self: center;
   }
 
   .site-title a {
-    display: flex;
-    justify-content: center;
-    font-size: 0.8em;
-    color: #000000;
     text-decoration: none;
+    color: #000;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+    font-style: uppercase;
   }
 
   .site-description {
-    align-self: center;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    display: flex;
+    font-size: 0.7em;
   }
-}
-.site-content {
-  display: flex;
-  width: 100%;
-  justify-content: flex-start;
-  border: 1px solid green;
-}
-
-.content-area {
-  width: 40%;
-  border: 1px solid red;
-}
-
-.site-content .widget-area {
-  width: 20.3%;
-  border: 1px solid red;
-}
-
-.page-title {
-  width: 20%;
-}
-
-#nav-container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  border: 1px solid green;
-  height: 90px;
 }
