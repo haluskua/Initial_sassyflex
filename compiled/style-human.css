@@ -981,10 +981,12 @@ object {
     background-color: #000;
   }
   .main-navigation ul {
-    display: none;
+    display: fkex;
+    justify-content: flex-start;
     list-style: none;
     margin: 0;
     padding-left: 0;
+    border: 1px solid green;
   }
   .main-navigation ul ul {
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -1018,31 +1020,36 @@ object {
   }
   .main-navigation li {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     width: 90%;
-    height: 60px;
+    height: 67px;
     margin: 0.2em 0.2em;
     background-color: #000;
+    margin-top: 14%;
     position: relative;
+    border: 0.3px solid pink;
   }
   .main-navigation a {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     text-align: center;
     width: 98%;
     font-size: 1.1em;
-    padding-right: 30%;
+    padding-right: 44%;
     color: #11c1e0;
     text-decoration: none;
-    border-bottom: 1px solid white;
   }
 
   /* Small menu. */
   .main-navigation.toggled ul {
-    border: 1px solid white;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+  }
+
+  .main-navigation.toggled a {
+    border: 1px solid red;
   }
 }
 @media screen and (max-width: 420px) and (min-width: 420px) {
@@ -1080,6 +1087,6 @@ object {
     font-family: sans-serif;
     font-size: 16px;
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 1em;
   }
 }
