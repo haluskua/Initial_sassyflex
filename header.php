@@ -41,7 +41,7 @@
 			</div>
 		</div>
 
-		<div class="rowstart">
+		<div class="rowend">
 			<div class="space-around">
 				<div id="fbi">
 					<img src="http://placehold.it/30x30" alt="">
