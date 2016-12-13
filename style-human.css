@@ -497,7 +497,7 @@ a:hover, a:active {
   clear: both;
   float: left;
   width: 100%;
-  position: absolute;
+  position: relative;
 }
 .main-navigation ul {
   display: none;
@@ -550,7 +550,6 @@ a:hover, a:active {
   position: relative;
   height: 34px;
   margin-top: 0.5em;
-  border: 1px solid #dcd;
   border-radius: 5px;
   background-color: #f7f8f8;
 }
@@ -560,9 +559,9 @@ a:hover, a:active {
   display: flex;
   -ms-flex-item-align: center;
       align-self: center;
-  text-align: left;
-  width: 60px;
-  font-size: 0.83em;
+  text-align: center;
+  width: 80px;
+  font-size: 0.84em;
   text-decoration: none;
   color: #000;
 }
@@ -572,18 +571,23 @@ a:hover, a:active {
 .main-navigation.toggled ul {
   display: -ms-flexbox;
   display: flex;
-  width: 98%;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 100%;
   height: auto;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-color: #f7f8f8;
+  background-color: transparent;
+  margin: 0 auto;
+  padding: 0;
 }
 
 #primary-menu {
   -ms-flex-pack: justify;
       justify-content: space-between;
-  margin: 5 auto;
+  margin: 0 auto;
   padding: 0;
+  position: relative;
 }
 
 @media screen and (min-width: 37.5em) {
