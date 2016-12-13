@@ -126,7 +126,7 @@
 
 
 // #section1, #section3 {
-// 	flex: 1;
+// 	flex: 1:
 // }
 
 // .site-content {
@@ -134,8 +134,6 @@
 // 	width: 100%;
 // 	justify-content: flex-start;
 // 	border: 1px solid green;
-
-
 
 // * Media query for _page.scss
 #banner {
@@ -148,11 +146,10 @@
 }
 #img-box {
 	width: 50%;
-	height: 170px;
+	height: 165px;
 	display: flex;
 	justify-content: center;
 }
-
 
 // * Media query for _page.scss
 
@@ -208,142 +205,7 @@
 // 	}
 
 
-
-
 // @button styles for dropdown menu
-
-.main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
-
-	ul {
-		display: none;
-		list-style: none;
-		margin: 0;
-		padding-left: 0;
-
-		ul {
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-			float: left;
-			position: relative;
-			top: 1em;
-			// left: -999em;
-			z-index: 99999;
-
-			ul {
-				left: -999em;
-				top: 0;
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-			}
-
-			li {
-				// border: 1px solid white;
-				&:hover > ul,
-				&.focus > ul {
-					left: 100%;
-				}
-			}
-
-			a {
-				text-align: center;
-				width: 100px;
-				padding-left: 10%;
-				color: #393535;
-			}
-
-			:hover > a,
-			.focus > a {
-			}
-
-			a:hover,
-			a.focus {
-			}
-		}
-
-		li:hover > ul,
-		li.focus > ul {
-			left: auto;
-		}
-	}
-
-	li {
-		display: flex;
-		justify-content: center;
-		width: 52%;
-		height: 35px;
-		margin: 0 auto;
-		// background-color: #ddd;
-		margin-top: 3%;
-		position: relative;
-		border: 1px solid #000;
-			border-radius: 2.8px;
-
-		&:hover > a,
-		&.focus > a {
-		}
-	}
-
-	a {
-		display: flex;
-		justify-content: center;
-		text-align: center;
-		width: 100px;
-			font-size: 0.76em;
-			color: #393535;
-		text-decoration: none;
-	}
-
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a,
-	.current-menu-ancestor > a {
-	}
-}
-
-/* Small menu. */
-// .menu-toggle,
-.main-navigation.toggled ul {
-		display: flex;
-		width: 100%;
-		height: auto;
-		justify-content: space-between;
-		margin: 0 auto;
-		margin-top: 8%;
-		// border: 1px solid red;
-
-}
-.main-navigation.toggled ul li {
-		display: flex;
-		width: 85px;
-		justify-content: center;
-		margin: 0 auto;
-		border: 1px solid green;
-	}
-// }
-
-
-
-@media screen and (min-width: 420px) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-	}
-}
-
-
-body, button, input, select, textarea {
-    color: #393535;
-    font-family: sans-serif;
-    font-size: 16px;
-    font-size: 1rem;
-    line-height: 1em;
-}
 
 
 }
