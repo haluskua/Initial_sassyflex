@@ -1,0 +1,175 @@
+.main-navigation {
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+
+	ul {
+		display: none;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+
+		ul {
+			// box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			float: left;
+			position: absolute;
+			top: 1.5em;
+			left: -999em;
+			width: 66%;
+			z-index: 99999;
+
+			ul {
+				border: 1px solid green;
+				left: -999em;
+				top: 0;
+			}
+
+			li {
+				&:hover > ul,
+				&.focus > ul {
+					left: 100%;
+				}
+			}
+
+			a {
+			    width: 112px;
+			    flex: 1 0 auto;
+			    display: flex;
+			    justify-content: center;
+			    flex-direction: column;
+		
+			}
+
+			:hover > a,
+			.focus > a {
+			}
+
+			a:hover,
+			a.focus {
+			}
+		}
+
+		li:hover > ul,
+		li.focus > ul {
+			left: auto;
+		}
+	}
+
+	li {
+		float: left;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		height: 40px;
+		width: 78px;
+		margin-top: 1.2em;
+		flex: 1 1 auto;
+
+		&:hover > a,
+		&.focus > a {
+		}
+	}
+
+	a {
+		color: #000;
+		display: block;
+		text-decoration: none;
+		text-align: center;
+	}
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a,
+	.current-menu-ancestor > a {
+	}
+}
+
+.menu-menu-1-container {
+	// background-color: #000;
+	display: flex;
+	justify-content: center;
+}
+/* Small menu. */
+.menu-toggle, .main-navigation.toggled ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // flex-direction: column;
+    width: 100%;
+}
+.menu-toggle, .main-navigation.toggled li {
+	display: flex;
+	justify-content: center;
+	margin-top: 17px;
+	border: 0 1px 0 1px solid gray;
+}
+
+.sub-menu a {
+	// margin-left: 80px;
+	color: #000;
+	text-align: center;
+	width: 80%;
+	background-color: red;
+}
+.sub-menu li {
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
+	background-color: gray;
+}
+@media screen and (min-width: 37.5em) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0 0 1.5em;
+		overflow: hidden;
+	}
+
+	.nav-previous {
+		float: left;
+		width: 50%;
+	}
+
+	.nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+
+
+
+
+
+
+.menu-item-33 {
+
+}
+
+#nav-container {
+	display: flex;
+	justify-content: flex-start;
+	width: 100%;
+	height: auto;
+	background-color: orange;
+}
+
+
+
+
+
+
+
+
+}

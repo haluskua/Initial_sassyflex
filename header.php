@@ -15,6 +15,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 <?php wp_head(); ?>
 </head>
@@ -69,12 +70,11 @@
 						<?php
 						endif; ?>			
 
-
 			<div id="nav-container">
 				
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<hr>
-					<div class="centerself"><button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'flexsass' ); ?></button>
+					<div class="centerself"><button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'flexsass' ); ?></button>
 					</div>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					<hr> 

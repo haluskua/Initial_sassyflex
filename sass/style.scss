@@ -119,4 +119,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 --------------------------------------------------------------*/
 @import "mediaQueries/desktop.scss";
 @import "mediaQueries/ipad";
-@import "mediaQueries/mobile";
+// @import "mediaQueries/mobile";
+
+@import "header/header";
+@import "footer/footer";
+@import "content/content";

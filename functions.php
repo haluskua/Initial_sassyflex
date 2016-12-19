@@ -1,4 +1,6 @@
+
 <?php
+
 /**
  * flexysass functions and definitions.
  *
@@ -6,6 +8,13 @@
  *
  * @package flexysass
  */
+
+
+// if (is_user_logged_in()) {
+//     show_admin_bar(true);
+// }#end if
+
+
 
 if ( ! function_exists( 'flexsass_setup' ) ) :
 /**
@@ -138,3 +147,4 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
