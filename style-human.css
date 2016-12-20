@@ -506,6 +506,7 @@ a:hover, a:active {
   padding-left: 0;
 }
 .main-navigation ul ul {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
   position: absolute;
   top: 1.5em;
@@ -546,7 +547,6 @@ a:hover, a:active {
   -ms-flex-direction: column;
       flex-direction: column;
   height: 40px;
-  width: 78px;
   margin-top: 1.2em;
   -ms-flex: 1 1 auto;
       flex: 1 1 auto;
@@ -561,6 +561,8 @@ a:hover, a:active {
 .menu-menu-1-container {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: center;
       justify-content: center;
 }
@@ -573,16 +575,9 @@ a:hover, a:active {
       flex-wrap: wrap;
   -ms-flex-pack: justify;
       justify-content: space-between;
+  -ms-flex-direction: column;
+      flex-direction: column;
   width: 100%;
-}
-
-.menu-toggle, .main-navigation.toggled li {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  margin-top: 17px;
-  border: 0 1px 0 1px solid gray;
 }
 
 .sub-menu a {
@@ -592,13 +587,14 @@ a:hover, a:active {
   background-color: red;
 }
 
-.sub-menu li {
+.sub-menu {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  height: auto;
+  margin: 6px;
   -ms-flex-pack: end;
       justify-content: flex-end;
-  background-color: gray;
 }
 
 @media screen and (min-width: 37.5em) {
@@ -628,17 +624,6 @@ a:hover, a:active {
   float: right;
   text-align: right;
   width: 50%;
-}
-.comment-navigation #nav-container,
-.posts-navigation #nav-container,
-.post-navigation #nav-container {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: start;
-      justify-content: flex-start;
-  width: 100%;
-  height: auto;
-  background-color: orange;
 }
 
 /*--------------------------------------------------------------
