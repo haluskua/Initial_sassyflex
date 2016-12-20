@@ -117,10 +117,15 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Media Queries
 --------------------------------------------------------------*/
-@import "mediaQueries/desktop.scss";
+@import "mediaQueries/desktop";
 @import "mediaQueries/ipad";
 // @import "mediaQueries/mobile";
 
 @import "header/header";
 @import "footer/footer";
 @import "content/content";
+
+
+// menuPlugin alterations
+
+@import "menuPlugin/alterations";

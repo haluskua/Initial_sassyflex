@@ -1020,3 +1020,13 @@ object {
     justify-content: center;
   }
 }
+@media screen and (max-width: 800px) {
+  #responsive-menu-button {
+    width: 45px !important;
+    height: 45px !important;
+    background-color: red !important;
+    position: fixed !important;
+    top: 90% !important;
+    left: 5% !important;
+  }
+}

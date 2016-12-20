@@ -70,16 +70,7 @@
 						<?php
 						endif; ?>			
 
-			<div id="nav-container">
-				
-				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<hr>
-					<div class="centerself"><button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'flexsass' ); ?></button>
-					</div>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-					<hr> 
-				</nav><!-- #site-navigation -->
-			</div>
+			
 		</div>
 	</header><!-- #masthead -->
 
