@@ -14,15 +14,25 @@
 
 
 // mobile layout
-
-.entry-content {
-
-	margin-top: 12%;
-	border: 0;
-}
-
 .entry-title {
 	font-size: 0.99em;
-	color: #000;
 	margin: 0 auto;
 }
+
+.page-content, .entry-content, .entry-summary{
+	margin: 0 0 0;
+}
+
+.entry-header {
+	display: flex;
+	justify-content: center; 
+	width: 100%;
+	background-color: #ddd;
+
+}
+
+.entry-header h1  {
+	color: #fff;
+	letter-spacing: 0.4px;
+}
+

@@ -90,12 +90,11 @@
 	flex-wrap: wrap;
 	justify-content: center;
 }
-/* Small menu. */
+/* Small menu. drops down */
 .menu-toggle, .main-navigation.toggled ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    flex-direction: column;
     width: 100%;
 }
 

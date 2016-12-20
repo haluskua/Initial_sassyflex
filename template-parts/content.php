@@ -27,6 +27,15 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
+		<?php 
+			// the_field('info_box_title');
+			if(get_field('info_box_content')) {
+				echo '<div class="info-box">';
+				echo '<h1>' . get_field('info_box_title') . '</h1>';
+				the_field('info_box_content');
+				echo '</div>';
+			}
+		 ?>
 		<?php
 			the_content( sprintf(
 				/* translators: %s: Name of current post. */

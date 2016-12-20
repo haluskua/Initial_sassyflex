@@ -556,12 +556,11 @@ a:hover, a:active {
   justify-content: center;
 }
 
-/* Small menu. */
+/* Small menu. drops down */
 .menu-toggle, .main-navigation.toggled ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  flex-direction: column;
   width: 100%;
 }
 
@@ -866,20 +865,42 @@ object {
   width: 33.33%;
 }
 
-.entry-content {
-  margin-top: 12%;
-  border: 0;
-}
-
 .entry-title {
   font-size: 0.99em;
-  color: #000;
   margin: 0 auto;
+}
+
+.page-content, .entry-content, .entry-summary {
+  margin: 0 0 0;
+}
+
+.entry-header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #ddd;
+}
+
+.entry-header h1 {
+  color: #fff;
+  letter-spacing: 0.4px;
 }
 
 /*--------------------------------------------------------------
 # Media Queries
 --------------------------------------------------------------*/
+.info-box {
+  margin-bottom: 2rem;
+  padding: 0 2rem 2rem;
+  background-color: #d9d9d9;
+}
+
+.info-box h1 {
+  padding: .5rem 2rem;
+  background-color: #1a1a1a;
+  color: red;
+}
+
 @media (max-width: 420px) {
   .site-header {
     display: block;

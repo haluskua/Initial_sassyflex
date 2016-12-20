@@ -68,7 +68,12 @@
 						if ( $description || is_customize_preview() ) : ?>
 							<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
 						<?php
-						endif; ?>			
+						endif; ?>	
+
+					<nav id="site-navigation" class="main-navigation" role="navigation">
+						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'sassyflex' ); ?></button>
+						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+					</nav><!-- #site-navigation -->		
 
 			
 		</div>
