@@ -45,10 +45,10 @@
 		<div class="rowend">
 			<div class="space-around">
 				<div id="fbi">
-					<img src="http://placehold.it/30x30" alt="">
+					<a href="http://facebook.com"><img src="../flexsass/images/facebook.png" alt=""></a>
 				</div>
 				<div id="ii">
-					<img src="http://placehold.it/30x30" alt="">	
+					<a href="http://instagram.com"></a><img src="http://placehold.it/30x30" alt="">	
 				</div>
 			</div>
 		</div> <!-- .rowcenterdiv -->
